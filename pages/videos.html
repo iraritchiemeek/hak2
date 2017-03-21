@@ -1,0 +1,11 @@
+<div class="inner-container">
+	<div class="videos" ng-init="selectVideoButton('aura')">
+		<div class="videos__video">
+			<iframe ng-src="{{current_video_url}}" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="videos__nav">
+			<div ng-click="selectVideoButton('aura')" class="videos__button">Aura</div>
+			<div ng-click="selectVideoButton('solitude')" class="videos__button">Solitude</div>
+		</div>
+	</div>
+</div>

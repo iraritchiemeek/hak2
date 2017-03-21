@@ -1,0 +1,14 @@
+<div class="inner-container">
+	<div class="section gallery">
+		<img class="gallery__img" src="../imgs/new-images/{{gallery[index]}}">
+	</div>
+	<div class="nav nav--photos">
+		<div class="nav__img-count">
+			<span>{{index + 1}}/{{gallery.length}}</span>
+		</div>
+		<div class="nav__arrow-wrapper">
+			<div class="nav__arrow nav__arrow--back" ng-click="decrementIndex(gallery)"><</div>
+			<div class="nav__arrow nav__arrow--forward" ng-click="incrementIndex(gallery)">></div>
+		</div>
+	</div>
+</div>

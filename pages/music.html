@@ -1,0 +1,24 @@
+<div class="inner-container">
+	<div class="music">
+		<div class="music__wrapper">
+			<div class="music__header">
+				<div class="music__album-art"></div>
+				<ul class="music__album-info">						
+					<li class="music__album-title">June</li>
+					<li class="music__album-artist">Hak</li>
+					<a href="https://mega.nz/#!GkxH1CyA!fSViPFnNwqKQEeVIeG0rQePlZv9QIQFTgu9C2PcUzDk" ><li class="music__album-download">Download</li></a>
+				</ul>
+			</div>
+			<div class="music__track-list">
+				<div class="music__track" ng-repeat="(index, track) in tracks">
+					<div id="{{index}}" class="music__track-number" ng-mouseenter="displayPlayIcon(index)" ng-mouseleave="clearIcons()" ng-click="audioHandler(index)">
+						<span>{{index + 1}}</span>
+					</div>
+					<div class="music__track-name" ng-mouseenter="displayPlayIcon(index)" ng-mouseleave="clearIcons()" ng-click="audioHandler(index)">
+						<span>{{track}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

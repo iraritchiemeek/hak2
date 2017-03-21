@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="hakApp">
+<head>
+	<title>Hak</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+	<script src="scripts/angular.js"></script>
+</head>
+<body ng-controller="mainController">
+	<header>
+		<div class="nav-bar">
+			<div class="nav-bar__item" ng-click="go('/music')">Music</div>
+			<div class="nav-bar__item" ng-click="go('/photos')">Photos</div>
+			<div class="nav-bar__item" ng-click="go('/videos')">Videos</div>
+			<div class="nav-bar__item" ng-click="go('/about')">About</div>
+		</div>
+	</header>
+	<div class="strips">
+		<div class="strips__strip strips__strip--strip1"></div>
+		<div class="strips__strip strips__strip--strip2"></div>
+		<div class="strips__strip strips__strip--strip3"></div>
+	</div>
+	<div class="title title--top-left" ng-click="go('/')">HAK</div>
+	<div ng-controller="mainController" ng-view></div>
+	<script src="scripts/index.js"></script>
+</html>
